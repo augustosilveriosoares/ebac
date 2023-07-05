@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","variaveis.scss"],"names":[],"mappings":"AAEA,KACE,iBCHK","file":"../main.css","sourcesContent":["@use 'variaveis';\r\n\r\nbody {\r\n  background-color: variaveis.$cor;\r\n}\r\n","$cor : rgb(197, 127, 42);\r\n"]}
