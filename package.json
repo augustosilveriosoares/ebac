@@ -1,5 +1,5 @@
 {
-  "name": "exercicio_gulp",
+  "name": "ebac",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
     "chokidar": "^3.5.3",
     "fill-range": "^7.0.1",
     "glob-parent": "^5.1.2",
-    "gulp-sass": "^5.1.0",
     "immutable": "^4.3.0",
     "is-binary-path": "^2.1.0",
     "is-extglob": "^2.1.1",
@@ -19,19 +18,15 @@
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.1",
     "readdirp": "^3.6.0",
+    "sass": "^1.63.6",
     "source-map-js": "^1.0.2",
     "to-regex-range": "^5.0.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-obfuscate": "^0.2.9",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.63.6"
+    "less": "^4.2.0"
   },
   "scripts": {
-    "gulp": "gulp",
+    "less": "less-watch-compiler ./src/styles/ ./build/styles/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
