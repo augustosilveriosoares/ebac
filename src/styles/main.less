@@ -1,113 +1,62 @@
-//maps
-@import 'colors.less';
-//variables
-@import 'variables.less';
-//escape
-@tablet: ~'(max-width: 1023px)';
-@mobile: ~'(max-width: 767px)';
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: @fonte;
-}
+@fontePrincipal: Roboto, sans-serif;
+@fonteDoTitulo: Lobster, cursive;
+@corDoTexto: #fff;
+@corDeFundo: #8b68f4;
+@corDoTextoDoBotao: #00ffa2;
+@corDoFundoDoBotao: #f7b731;
 
 body {
-    background-color: #colors[branco];
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
 }
 
-li {
-    list-style: none;
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
 }
 
-.container {
-    max-width: 1024px;
+main {
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
-
-}
-
-header {
-    background-color: #182C61;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu li {
-    font-weight: bold;
-    margin-left: 24px;
-}
-
-.menu li a {
-    color: #colors[branco];
-    text-decoration: none;
-}
-
-section {
-    padding: 56px 0;
-}
-
-.products {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 32.66%);
-    column-gap: 1%;
-    row-gap: 4%;
-    width: 100%;
-}
-
-.product-item img {
-    width: 100%;
-    border-radius: 16px;
-}
-
-.product-button {
-    display: block;
-    background-color: #colors[btn];
-    color: #fff;
+    font-size: 2em;
     text-align: center;
-    padding: 8px 0;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
     border-radius: 8px;
-    margin-top: 8px;
-    text-decoration: none;
+    background-color: @corDoFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    font-family: @fontePrincipal;
 }
 
-.product-button:hover {
-    background-color: #colors[btnHover];
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    border-bottom: 6px solid #fff;
 }
 
-@media @tablet {
-    .container {
-        max-width: 80%;
-    }
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
 
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
-    }
-}
-
-@media @mobile {
-    .products {
+    span {
+        font-weight: bold;
+        font-size: 3em;
         display: block;
-    }
-
-    .product-item {
-        margin-bottom: 32px;
     }
 }
