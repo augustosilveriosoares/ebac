@@ -209,7 +209,7 @@
     "xtend": "^4.0.2"
   },
   "scripts": {
-    "sass": "sass",
+    "sass": "sass ./src/styles/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
