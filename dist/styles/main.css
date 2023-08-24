@@ -11,27 +11,17 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-column-gap: 1%;
-
 }
 
-.produto {
-
-
-  &-imagem {
-    width: 100%;
-  }
-
-  &-nome {
-    font-size: 1.2em;
-    margin: 8px 0;
-  }
-
-  &-descricao {
-    color: gray;
-  }
-
-
-
+.produto-imagem {
+  width: 100%;
+}
+.produto-nome {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+.produto-descricao {
+  color: gray;
 }
 
 .em-destaque {
@@ -40,3 +30,5 @@
   padding: 8px;
   background-color: #ffff42;
 }
+
+/*# sourceMappingURL=main.css.map */
