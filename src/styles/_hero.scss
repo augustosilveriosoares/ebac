@@ -1,0 +1,53 @@
+@use 'cores.scss';
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/banner-desk.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+
+  &__content {
+    background-color: cores.$blackAlpha;
+    display: block;
+    padding: 5%;
+    margin-left: 10%;
+    max-width: 30%;
+
+    @media (max-width: 762px) {
+      max-width: 80%;
+    }
+
+  }
+
+  &__small {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: white;
+  }
+
+  &__tittle {
+    color: cores.$branco;
+    font-size: 3em;
+  }
+
+  &__description {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    color: cores.$branco;
+    font-size: 16px;
+  }
+
+
+  @media (max-width: 762px) {
+    background-image: url("../images/banner-mobile.jpg");
+    background-position: center top;
+  }
+}

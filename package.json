@@ -84,6 +84,7 @@
     "grunt-legacy-log-utils": "^2.1.0",
     "grunt-legacy-util": "^2.0.1",
     "grunt-replace": "^2.0.2",
+    "gulp-uglify": "^3.0.2",
     "gzip-size": "^5.1.1",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
@@ -209,6 +210,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.66.1"
   },

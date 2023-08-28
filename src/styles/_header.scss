@@ -1,0 +1,38 @@
+@use 'cores.scss';
+@import '_cores.scss';
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: cores.$blackAlpha;
+  transition: background-color .5s ease;
+  padding: 10px;
+  z-index: 1;
+
+
+
+  &__container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      padding: 0 12px 0 20px;
+    }
+  }
+
+  &__logo {
+
+    width: 180px;
+
+    @media (max-width: 768px) {
+      width: 120px;
+    }
+  }
+
+
+
+}
+

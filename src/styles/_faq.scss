@@ -1,0 +1,62 @@
+@use 'cores.scss';
+
+.faq {
+  padding: 5.6vw;
+  background-color: cores.$secondary;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: white;
+
+  }
+
+  &__questions {
+    &__item {
+      background-color: transparent;
+      border-bottom: 1px solid cores.$link;
+      margin-bottom: 16px;
+      list-style-type: none;
+
+      &__question {
+        color: cores.$link;
+        font-size: 20px;
+        padding: 24px;
+        display: block;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+          content: '+';
+          position: absolute;
+          top: 0;
+          right: 24px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 40px;
+        }
+      }
+
+      &__answer {
+        color: white;
+        height: 0;
+        overflow: hidden;
+        padding: 0 24px;
+        transition: height, .5s ease;
+      }
+
+      &--is-open {
+        .faq__questions__item__question::after {
+          content: '-';
+        }
+
+        .faq__questions__item__answer {
+          height: auto;
+          padding-bottom: 24px;
+          transition: height, .5s ease;
+        }
+      }
+    }
+  }
+}

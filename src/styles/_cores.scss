@@ -1,0 +1,55 @@
+$blackAlpha :rgba(11, 0, 28, 0.842);
+$branco: white;
+$primary: rgb(39, 1, 61);
+$secondary: #030328;
+$link: rgb(158, 134, 255);
+
+
+
+@mixin gradientPrimary {
+  background: rgb(94, 0, 148);
+  background: -moz-linear-gradient(90deg, rgba(94, 0, 148, 1) 0%, rgba(154, 0, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(94, 0, 148, 1) 0%, rgba(154, 0, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(94, 0, 148, 1) 0%, rgba(154, 0, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5e0094", endColorstr="#9a00ff", GradientType=1);
+}
+
+@mixin gradientSecondary {
+  background: rgb(74, 0, 148);
+  background: -moz-linear-gradient(90deg, rgba(74, 0, 148, 1) 0%, rgba(0, 99, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(74, 0, 148, 1) 0%, rgba(0, 99, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(74, 0, 148, 1) 0%, rgba(0, 99, 255, 1) 100%);
+  filter:
+
+    progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a0094", endColorstr="#0063ff", GradientType=1);
+}
+
+@mixin gradientPlansBackground {
+  background: rgb(66, 34, 138);
+  background: -moz-linear-gradient(180deg, rgba(66, 34, 138, 1) 0%, rgba(42, 12, 71, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(66, 34, 138, 1) 0%, rgba(42, 12, 71, 1) 100%);
+  background: linear-gradient(180deg, rgba(66, 34, 138, 1) 0%, rgba(42, 12, 71, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42228a", endColorstr="#2a0c47", GradientType=1);
+}
+
+@mixin gradientPlansItem {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.21332282913165268) 0%, rgba(82, 38, 125, 0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.21332282913165268) 0%, rgba(82, 38, 125, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.21332282913165268) 0%, rgba(82, 38, 125, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#52267d", GradientType=1);
+
+
+
+}
+
+@mixin gradientPlansItemDestaque {
+  background: rgb(144, 101, 246);
+  background: -moz-linear-gradient(180deg, rgba(144, 101, 246, 0.21332282913165268) 0%, rgba(40, 30, 88, 0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(144, 101, 246, 0.21332282913165268) 0%, rgba(40, 30, 88, 0) 100%);
+  background: linear-gradient(180deg, rgba(144, 101, 246, 0.21332282913165268) 0%, rgba(40, 30, 88, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9065f6", endColorstr="#281e58", GradientType=1);
+
+
+
+}
