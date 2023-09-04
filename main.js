@@ -7,22 +7,6 @@ $(document).ready(function () {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
     $('#botao').addClass('disabled');
 
-    // $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
-
-    //   if (!("erro" in dados)) {
-    //     //Atualiza os campos com os valores da consulta.
-
-    //     var log = dados.logradouro + ', ' + dados.bairro + ', ' + dados.localidade + '-' + dados.uf;
-    //     $('#adress').val(log);
-
-    //   } //end if.
-    //   else {
-    //     //CEP pesquisado não foi encontrado.
-
-    //     alert("CEP não encontrado.");
-    //   }
-    // });
-
     fetch(url).then(function (dados) {
       return dados.json();
       console.log(dados);
