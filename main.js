@@ -1,23 +1,23 @@
-$(document).ready(function () {
-  // $('#cep').mask('00000-000');
+document.addEventListener('DOMContentLoaded', function () {
+  const nameElement = document.querySelector('#name');
+  const usernameElement = document.querySelector('#username');
+  const avatarElement = document.querySelector('#avatar');
+  const reposElement = document.querySelector('#repos');
+  const followersElement = document.querySelector('#followers');
+  const followingElement = document.querySelector('#following');
+  const linkElement = document.querySelector('#link');
 
-  $("#form").on("submit", function (event) {
-    event.preventDefault();
-    var cep = $('#cep').val();
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
-    $('#botao').addClass('disabled');
-
-    fetch(url).then(function (dados) {
-      return dados.json();
-      console.log(dados);
-    }).then(function (j) {
-      var log = j.logradouro + ', ' + j.bairro + ', ' + j.localidade + '-' + j.uf;
-      $('#adress').val(log);
-
-    }).catch(function (e) {
-      alert('Erro, tente novamente');
-    }).finally(function () { $('#botao').removeClass('disabled') });
-
-
-  });
-});
+  fetch('https://api.github.com/users/augustosilveriosoares')
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (json) {
+      nameElement.innerText = json.name;
+      usernameElement.innerText = json.login;
+      avatarElement.src = json.avatar_url;
+      followingElement.innerText = json.following;
+      followersElement.innerText = json.followers;
+      repos.innerText = json.public_repos;
+      linkElement.href = json.html_url;
+    })
+})

@@ -1,40 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exericio AJAX</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Github</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-
-  <section>
-    <div class="container ">
-      <div class="row d-flex align-items-center min-vh-100">
-        <div class="col">
-          <form id="form">
-            <div class="col-6 mb-3">
-              <label for="cep" class="form-label">Informe o CEP</label>
-              <input type="text" class="form-control" id="cep" required>
-            </div>
-            <div class="col-6 mb-3">
-              <label for="adress" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="adress" disabled>
-            </div>
-            <button id="botao" type="submit" class="btn btn-primary">CONSULTA</button>
-          </form>
-
+    <header>
+        <div class="container">
+            <img class="profile-avatar" id="avatar" src="https://via.placeholder.com/180x180" alt=".">
+            <h1 class="profile-name" id="name">Augusto Silvério Soares</h1>
+            <h2 class="profile-username" id="username">@ogiansouza</h2>
+            <ul class="numbers">
+                <li class="numbers-item" id="repos">
+                    <h4>Repositórios</h4>
+                    5
+                </li>
+                <li class="numbers-item" id="followers">
+                    <h4>Seguidores</h4>
+                    5
+                </li>
+                <li class="numbers-item" id="following">
+                    <h4>Seguindo</h4>
+                    5
+                </li>
+            </ul>
+            <a href="#" class="profile-link" id="link">Ver no Github</a>
         </div>
-      </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="jquery.mask.min.js"></script>
-      <script src="main.js"></script>
-    </div>
-  </section>
+    </header>
+    <script src="main.js"></script>
 </body>
 
 </html>
